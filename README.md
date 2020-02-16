@@ -2,6 +2,9 @@
 This library supports consuming and publishing events in Toto.<br/>
 Currently supports Google PubSub
 
+## Authenticating to Google
+Google pubsub requires a Service Account. In order to setup Service Accounts and authorize them to pubsub follow this [guide](https://github.com/nicolasances/guides/wiki/Guide:-GCP-Cross-project-access-to-PubSub)
+
 ## Toto Event Consumer
 
 When including this through `require()`, a new `TotoEventConsumer` instance will be automatically created and it will be possible to consume events from kafka.
