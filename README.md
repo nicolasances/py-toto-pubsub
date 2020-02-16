@@ -3,7 +3,9 @@ This library supports consuming and publishing events in Toto.<br/>
 Currently supports Google PubSub
 
 ## Authenticating to Google
-Google pubsub requires a Service Account. In order to setup Service Accounts and authorize them to pubsub follow this [guide](https://github.com/nicolasances/guides/wiki/Guide:-GCP-Cross-project-access-to-PubSub)
+Google pubsub requires a Service Account. In order to setup Service Accounts and authorize them to pubsub follow this [guide](https://github.com/nicolasances/guides/wiki/Guide:-GCP-Cross-project-access-to-PubSub).
+
+Once you have a Service Account json file, the Toto CD service will make it available in your container at a specific location and will set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable, which is used by this library to authenticate to Google pubsub.
 
 ## Toto Event Consumer
 
